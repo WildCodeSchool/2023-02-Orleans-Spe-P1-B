@@ -1,5 +1,11 @@
-body {
-  background: linear-gradient(#2D253A, #9198e5) no-repeat;
+.bodyClass {
+  background-color: black;
+  /* background: linear-gradient(#2D253A, #9198e5) no-repeat; */
+  background-size: cover;
+  height: 98dvh;
+}
+.bodyClassAfter {
+   background: linear-gradient(#2D253A, #9198e5) no-repeat;
   background-size: cover;
   height: 98dvh;
 }
