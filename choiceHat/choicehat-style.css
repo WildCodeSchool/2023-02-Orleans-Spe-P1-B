@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(#2D253A, #9198e5) no-repeat;
+  background-size: cover;
+  height: 98dvh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-img-hat {
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+  position: relative;
+  bottom: -10dvh;
+}
+
+.form-name {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5px;
+  width: 90%;
+}
+
+.container-name {
+  display: flex;
+  justify-content: center;
+
+}
+
+.container-form-firstname {
+  text-align: center;
+}
+
+#firstName {
+  margin-block-start: 5px;
+}
+#lastName {
+  margin-block-start: 5px;
+}
+
+.container-form-lastname {
+  text-align: center;
+}
+
+.container-question {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding-block-start: 20px;
+  margin-inline: 5px;
+}
+
+.container-parent-question {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-send {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-block-start: 15px ;
+}
+
+#question {
+  margin-block-start: 10px;
+}
