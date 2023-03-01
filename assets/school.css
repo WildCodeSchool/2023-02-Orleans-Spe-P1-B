@@ -146,6 +146,15 @@ h2 {
 }
 
 
+.lookForDifferences {
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin: 30px;
+    width: 600px;
+    height: 450px;
+    border-radius: 8%;
+}
+
 @media screen and (max-width: 767px) {
     .card {
         flex-direction: column;
