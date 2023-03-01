@@ -120,12 +120,64 @@ function afterLumos() {
   questionInput.setAttribute("id", "question");
   containerQuestion.appendChild(questionInput);
 
-  const aBtnSend = document.createElement("a");
-  aBtnSend.href = "";
-  aBtnSend.className = "btn-send";
-  containerForm.appendChild(aBtnSend);
-
   const btnSend = document.createElement("button");
   btnSend.textContent = "Envoyer";
-  aBtnSend.appendChild(btnSend);
+  btnSend.setAttribute("type", "submit");
+  form.appendChild(btnSend);
+
+  form.onsubmit = function (event) {
+    event.preventDefault();
+    containerForm.remove();
+    houseCards();
+  };
+}
+
+function houseCards() {
+  const houses = [
+    {
+      name: "Gryffondor",
+      image: "",
+      link: "",
+    },
+    {
+      name: "Poufsouffle",
+      image: "",
+      link: "",
+    },
+    {
+      name: "Serdaigle",
+      image: "",
+      link: "",
+    },
+    {
+      name: "Serpentard",
+      image: "",
+      link: "",
+    },
+  ];
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  let randomHouses = getRandomInt(3);
+
+  const cardContainer = document.createElement("div");
+  document.body.appendChild(cardContainer);
+
+  const cardTitle = document.createElement("h2");
+  cardTitle.textContent = houses[randomHouses].name;
+  cardContainer.appendChild(cardTitle);
+
+  const cardText = document.createElement("p");
+  cardText.textContent = `Félicitations, vous êtes admis à ${houses[randomHouses].name}`;
+  cardContainer.appendChild(cardText);
+
+  const cardLink = document.createElement("a");
+  cardLink.href = `${houses[randomHouses].link}`;
+  cardContainer.appendChild(cardLink);
+
+  const cardButton = document.createElement("button");
+  cardButton.textContent = "C'est parti !";
+  cardLink.appendChild(cardButton);
 }
