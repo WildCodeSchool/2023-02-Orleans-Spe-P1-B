@@ -36,7 +36,7 @@ header {
 }
 
 .photo {
-    background-image: url('../assets/images/blason-gryffondor.png');
+    background-image: url('../assets/images/coat-of-arms.png');
     width: 16em;
     height: 18em;
     background-size: contain;
@@ -144,7 +144,6 @@ h2 {
     color: var(--light);
     margin-top: 3.5em;
 }
-
 
 
 @media screen and (max-width: 767px) {
