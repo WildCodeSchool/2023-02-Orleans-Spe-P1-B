@@ -1,24 +1,40 @@
-/* function RemoveBlackLumos() {
-  let blackLumos = document.body;
+const lumosFormContainer = document.createElement("div");
+lumosFormContainer.className = "lumos-form-container";
+document.body.appendChild(lumosFormContainer);
 
-  if (blackLumos) {
-    
-  } else {
-    blackLumos.innerHTML = "";
-    blackLumos.style.background = "black";
-  }
-}
+const lumosForm = document.createElement("form");
+lumosForm.setAttribute("method", "");
+lumosForm.setAttribute("action", "");
+lumosFormContainer.appendChild(lumosForm);
 
-const bodyCheck = document.body;
-bodyCheck.addEventListener("click", RemoveBlackLumos) */
+const lumosFormLabel = document.createElement("label");
+lumosFormLabel.textContent = "Texte blablabal";
+lumosFormLabel.style.color = "white";
+lumosForm.appendChild(lumosFormLabel);
 
-let count = 0;
-document.body.addEventListener("click", () => {
-  count++;
-  if (count === 1) {
-    afterLumos();
-  }
-});
+const lumosFormInput = document.createElement("input");
+lumosFormInput.setAttribute("type", "text");
+lumosFormInput.setAttribute("name", "lumosInput");
+lumosFormInput.setAttribute("id", "lumosInput");
+lumosForm.appendChild(lumosFormInput);
+
+const btnLumos = document.createElement("button");
+btnLumos.textContent = "Jeter le sort !";
+btnLumos.setAttribute("type", "submit");
+lumosForm.appendChild(btnLumos);
+
+lumosForm.onsubmit = function (event) {
+  event.preventDefault();
+  const lumos = lumosFormInput.value;
+  let count = 0;
+  document.body.addEventListener("click", () => {
+    count++;
+    if (count === 1 && lumos === "lumos") {
+      afterLumos();
+      lumosFormContainer.remove();
+    }
+  });
+};
 
 function afterLumos() {
   document.body.classList.remove("bodyClass");
