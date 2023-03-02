@@ -3,13 +3,12 @@ const messagePass =
 const messageNoPass =
     "Veuillez entrer les différences correctes dans les photos."
 
-let theValue = 10;
+const differenceInput = document.getElementById("difference");
 
 function myFunction() {
-    if (document.getElementById("difference").validity.customError) {
+    if (differenceInput.value != 8) {
         alert(messageNoPass);
     } else {
         alert(messagePass);
     }
-}
-;
+};
