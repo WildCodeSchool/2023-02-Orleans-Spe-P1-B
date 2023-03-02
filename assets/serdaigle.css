@@ -1,0 +1,72 @@
+body {
+    background-image: url('../assets/images/backgroundserdaigle.jpg');
+}
+
+
+.photo {
+    background-image: url('../assets/images/Serdaigle.png');
+}
+
+h1 {
+    color: var(--title-serdaigle);
+    font-size: var(--title-size);
+
+}
+
+h2 {
+    color: var(--title-serdaigle);
+}
+
+
+.history {
+    background-color: var(--background-serdaigle);
+}
+
+.card {
+    background-color: var(--background-serdaigle);
+}
+
+.card-reverse {
+    background-color: var(--background-serdaigle);
+}
+
+.communRoom {
+    width: 330px;
+    height: 363px;
+}
+
+.bedroom {
+    width: 330px;
+    height: 325px;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .card-reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        order: 1;
+    }
+
+    .communRoom {
+        width: 400px;
+    }
+
+    .bedroom {
+        width: 420px;
+    }
+
+    .description {
+        order: 2;
+        text-align: center;
+        margin-top: var(1em);
+    }
+}
