@@ -1,34 +1,35 @@
 body {
-    background-image: url('../assets/images/serpcorydor.png');
+    background-image: url('../assets/images/grifschool.jpg');
+
 }
 
 .photo {
-    background-image: url('../assets/images/serpentard.png');
+    background-image: url('../assets/images/coat-of-arms.png');
 }
 
 h1 {
-    color: var(--title-serp);
+    color: var(--title-color);
 }
 
 h2 {
-    color: var(--title-serp);
+    color: var(--title-color);
 }
 
 .history {
-    background-color: var(--background-serp);  
+    background-color: var(--dark);
 }
 
 .card {
-    background-color: var(--background-serp);
+    background-color: var(--dark);
 }
 
 .card-reverse {
-    background-color: var(--background-serp);
+    background-color: var(--dark);
 }
 
 .communRoom {
     width: 330px;
-    height: 340px;
+    height: auto;
 }
 
 .bedroom {

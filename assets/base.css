@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Pacifico&display=swap');
+
+:root {
+    --light: aliceblue;
+    --primary: #f7b707;
+    --secondary: #997e35ec;
+    --title-pouf: #3b3f46;
+    --dark: #440505;
+    --title-color: #EB6216;
+    --title-serdaigle: #233757;
+    --background-serdaigle: #6D92BE;
+    --title-serp: #40db81;
+    --background-serp: #1b5032;
+    --font-size: 2em;
+    --title-size: 3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
