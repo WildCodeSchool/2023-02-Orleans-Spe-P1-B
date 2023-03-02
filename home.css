@@ -1,66 +1,69 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    background-color: black;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
-  html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-  canvas {
-    display: block;
-    z-index: 0;
+canvas {
+  display: block;
+  z-index: 0;
 }
 
-  .welcome {
-    position: absolute;
-    text-align: center;
-    font-size: medium;
-    z-index: 2;
-    color: white;
-    top: 0%;
-    left: 50%;
-    white-space: pre-line;
-    transform: translate(-50%, -50%);
-    padding-top: 50px;
+.welcome {
+  position: absolute;
+  text-align: center;
+  font-size: medium;
+  z-index: 2;
+  color: white;
+  top: 0%;
+  left: 50%;
+  white-space: pre-line;
+  transform: translate(-50%, -50%);
+  padding-top: 50px;
 }
 
-  .buttonmasked{
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin:auto;
-    opacity: 0.1;
-    color: rgb(24, 34, 35);
-    z-index: 2;
+.buttonmasked {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  opacity: 0.1;
+  color: rgb(24, 34, 35);
+  z-index: 2;
 }
-.map { 
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-right: 20px;
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    right: 0;
-    color: white;
+
+.map {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  color: white;
 }
-.school{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    left: 0;
-    color: white;
-    padding-bottom: 5px;
-    padding-left: 5px;
+
+.school {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 
 #school-img {
@@ -73,11 +76,26 @@ body {
 }
 
 @keyframes hithere {
-  30% { transform: scale(1.2); }
-  40%, 60% { transform: rotate(-10deg) scale(1.2); }
-  50% { transform: rotate(10deg) scale(1.2); }
-  70% { transform: rotate(0deg) scale(1.2); }
-  100% { transform: scale(1); }
+  30% {
+    transform: scale(1.2);
+  }
+
+  40%,
+  60% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(10deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 #letterhogwart {
@@ -90,6 +108,7 @@ body {
   #school-img {
     display: none;
   }
+
   .welcome {
     padding-top: 150px;
   }
