@@ -5,23 +5,32 @@ document.body.appendChild(lumosFormContainer);
 const lumosForm = document.createElement("form");
 lumosForm.setAttribute("method", "");
 lumosForm.setAttribute("action", "");
+lumosForm.className = "lumos-form";
 lumosFormContainer.appendChild(lumosForm);
 
 const lumosFormLabel = document.createElement("label");
-lumosFormLabel.textContent = "Texte blablabal";
+lumosFormLabel.textContent = "Hmm... il faudrait un peu de lumière ici...";
 lumosFormLabel.style.color = "white";
+lumosFormLabel.className = "lumos-form-label";
 lumosForm.appendChild(lumosFormLabel);
 
 const lumosFormInput = document.createElement("input");
 lumosFormInput.setAttribute("type", "text");
 lumosFormInput.setAttribute("name", "lumosInput");
 lumosFormInput.setAttribute("id", "lumosInput");
+lumosFormInput.className = "lumos-form-input";
 lumosForm.appendChild(lumosFormInput);
 
 const btnLumos = document.createElement("button");
 btnLumos.textContent = "Jeter le sort !";
 btnLumos.setAttribute("type", "submit");
+btnLumos.className = "btn-lumos";
 lumosForm.appendChild(btnLumos);
+
+const wandLumos = document.createElement("img");
+wandLumos.src = "/assets/images/wand.png";
+wandLumos.className = "wand-lumos";
+document.body.appendChild(wandLumos);
 
 lumosForm.onsubmit = function (event) {
   event.preventDefault();
@@ -32,6 +41,7 @@ lumosForm.onsubmit = function (event) {
     if (count === 1 && lumos === "lumos") {
       afterLumos();
       lumosFormContainer.remove();
+      wandLumos.remove();
     }
   });
 };
@@ -46,6 +56,7 @@ function afterLumos() {
 
   const title = document.createElement("h1");
   title.textContent = "C'est le moment du choix !";
+  title.setAttribute("id", "choice-title");
   containerTitle.appendChild(title);
 
   const containerImgHat = document.createElement("div");
@@ -53,8 +64,8 @@ function afterLumos() {
   document.body.appendChild(containerImgHat);
 
   const imageHat = document.createElement("img");
-  imageHat.src =
-    "https://i1.sndcdn.com/artworks-TyY4eXLEYK44Ld9o-TxWvnw-t240x240.jpg";
+  imageHat.src = "/assets/images/CHOIXPEAU.png";
+  imageHat.className = "image-hat";
   containerImgHat.appendChild(imageHat);
 
   const containerForm = document.createElement("div");
@@ -103,7 +114,7 @@ function afterLumos() {
 
   const containerParentQuestion = document.createElement("div");
   containerParentQuestion.className = "container-parent-question";
-  containerForm.appendChild(containerParentQuestion);
+  form.appendChild(containerParentQuestion);
 
   const containerQuestion = document.createElement("div");
   containerQuestion.className = "container-question";
@@ -123,11 +134,18 @@ function afterLumos() {
   const btnSend = document.createElement("button");
   btnSend.textContent = "Envoyer";
   btnSend.setAttribute("type", "submit");
-  form.appendChild(btnSend);
+  btnSend.className = "btn-form-send"
+  containerQuestion.appendChild(btnSend);
+
+  const buttonImage = document.createElement("img");
+  buttonImage.src = "/assets/images/owl.png";
+  buttonImage.className = "button-owl";
+  btnSend.appendChild(buttonImage);
 
   form.onsubmit = function (event) {
     event.preventDefault();
     containerForm.remove();
+    title.textContent = "Bravo !"
     houseCards();
   };
 }
@@ -136,26 +154,26 @@ function houseCards() {
   const houses = [
     {
       name: "Gryffondor",
-      image: "",
-      link: "",
+      image: "/assets/images/coat-of-arms.png",
+      link: "../griffondor.html",
     },
     {
       name: "Poufsouffle",
-      image: "",
-      link: "",
+      image: "/assets/images/Poufsouffle.png",
+      link: "../poufsouffle.html",
     },
     {
       name: "Serdaigle",
-      image: "",
-      link: "",
+      image: "/assets/images/Serdaigle.png",
+      link: "../serdaigle.html",
     },
     {
       name: "Serpentard",
-      image: "",
-      link: "",
+      image: "/assets/images/serpentard.png",
+      link: "../serpentar.html",
     },
   ];
-
+console.log(houses[3].link);
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
@@ -163,7 +181,13 @@ function houseCards() {
   let randomHouses = getRandomInt(3);
 
   const cardContainer = document.createElement("div");
+  cardContainer.className = "card-container";
   document.body.appendChild(cardContainer);
+
+  const cardImage = document.createElement("img");
+  cardImage.src = `${houses[randomHouses].image}`;
+  cardImage.className = "image-houses";
+  cardContainer.appendChild(cardImage);
 
   const cardTitle = document.createElement("h2");
   cardTitle.textContent = houses[randomHouses].name;
@@ -175,9 +199,17 @@ function houseCards() {
 
   const cardLink = document.createElement("a");
   cardLink.href = `${houses[randomHouses].link}`;
+  cardLink.className = "link";
   cardContainer.appendChild(cardLink);
+  
 
   const cardButton = document.createElement("button");
   cardButton.textContent = "C'est parti !";
+  cardButton.className = "btn-form-send";
   cardLink.appendChild(cardButton);
+
+  const imageButtonLink = document.createElement("img");
+  imageButtonLink.src = "/assets/images/houseslogobutton.png";
+  imageButtonLink.className = "button-howgarts";
+  cardButton.appendChild(imageButtonLink);
 }
