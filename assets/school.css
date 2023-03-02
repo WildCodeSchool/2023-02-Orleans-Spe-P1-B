@@ -72,9 +72,12 @@ h2 {
     text-align: center;
     position: relative;
     line-height: 1em;
-    font-size: clamp(0.5em, 1.5em, 2em);
+    font-size: clamp(0.5em, 1.5em, 3em);
     margin-top: 1em;
     margin-bottom: 1.5em;
+    background-color: var(--dark);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .card {
