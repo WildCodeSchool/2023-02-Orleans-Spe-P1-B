@@ -1,0 +1,252 @@
+.bodyClass {
+  background-color: black;
+  /* background: linear-gradient(#2D253A, #9198e5) no-repeat; */
+  background-size: cover;
+  height: 98dvh;
+}
+.bodyClassAfter {
+  background: url("/assets/images/bgtestpngsimple.png");
+  background-size: contain;
+  height: 98dvh;
+  backdrop-filter: blur(20px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-title {
+  font-size: clamp();
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: azure;
+}
+
+.container-title h1 {
+  font-size: clamp(1rem, 5vw, 4rem);
+  margin-block-start: 3vmin;
+}
+
+.container-img-hat {
+  display: flex;
+  justify-content: center;
+}
+
+.container-form {
+  position: relative;
+  bottom: -4dvh;
+  background-color: white;
+  padding-block: 1rem;
+  border-radius: 15px;
+  width: 25rem;
+  margin-inline: auto;
+  backdrop-filter: blur(10px);
+}
+
+.form-name {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5px;
+  width: 90%;
+}
+
+.container-name {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container-form-firstname {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 10rem;
+}
+
+#firstName {
+  margin-block-start: 5px;
+}
+#lastName {
+  margin-block-start: 5px;
+}
+
+.container-form-lastname {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 10rem;
+}
+
+.container-question {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding-block-start: 20px;
+  margin-inline: 5px;
+}
+
+.container-parent-question {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-send {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-block-start: 15px;
+}
+
+#question {
+  margin-block-start: 10px;
+}
+
+.lumos-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lumos-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.lumos-form-input {
+  position: absolute;
+  top: 11rem;
+  right: 48rem;
+}
+
+.wand-lumos {
+  position: absolute;
+  right: 60rem;
+
+  height: 50rem;
+  transform: rotate(15deg);
+}
+
+.lumos-form-label {
+  text-align: center;
+  padding-block-start: 3vmin;
+  font-size: clamp(1rem, 5vw, 4rem);
+}
+
+#lumosInput {
+  text-align: center;
+  display: flex;
+  color: grey;
+  background-color: rgb(33, 34, 35);
+  border-radius: 5px;
+  border: none;
+  outline: transparent;
+  width: 11vmin;
+  align-self: center;
+  margin-block-start: 1vmin;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn-lumos {
+  display: none;
+}
+
+.btn-form-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+  border-inline: 1px black;
+  margin-block-start: 2rem;
+  background-color: transparent;
+  width: 12rem;
+  margin-inline: auto;
+  border-inline: transparent;
+}
+
+.btn-form-send:hover {
+  box-shadow: 1px 1px 1px 1px rgba(57, 48, 72, 1);
+  transform: translate(-1px, -1px);
+}
+
+.button-owl {
+  height: 4rem;
+}
+
+.button-howgarts {
+  height: 4rem;
+  filter: brightness(150%);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: white 1px solid;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+  margin-block-start: 1rem;
+  height: 18rem;
+  width: 25rem;
+  margin-inline: auto;
+  background-color: white;
+}
+
+.card-container p,
+h2 {
+  margin-block: 1rem;
+}
+
+.image-houses {
+  position: relative;
+  height: 10rem;
+}
+
+.image-hat {
+  height: 15rem;
+}
+
+
+
+@media screen and (max-width: 396px) {
+  .container-name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-form-lastname {
+    width: 15rem;
+  }
+
+  .container-form-firstname {
+    width: 15rem;
+  }
+
+  .card-container {
+    width: 20rem;
+    margin-inline: auto;
+  }
+
+  .container-form {
+    width: 20rem;
+  }
+
+  .lumos-form-input {
+    position: absolute;
+    top: 8rem;
+    right: 10rem;
+  }
+
+  .wand-lumos {
+    position: absolute;
+    right: 13rem;
+    height: 19rem;
+    transform: rotate(0deg);
+    top: 9rem;
+  }
+}
