@@ -155,7 +155,7 @@ function houseCards() {
     {
       name: "Gryffondor",
       image: "/assets/images/coat-of-arms.png",
-      link: "../griffondor.html",
+      link: "../gryffondor.html",
     },
     {
       name: "Poufsouffle",
@@ -170,7 +170,7 @@ function houseCards() {
     {
       name: "Serpentard",
       image: "/assets/images/serpentard.png",
-      link: "../serpentar.html",
+      link: "../serpentard.html",
     },
   ];
 console.log(houses[3].link);
