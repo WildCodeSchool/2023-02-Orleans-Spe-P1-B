@@ -178,7 +178,7 @@ console.log(houses[3].link);
     return Math.floor(Math.random() * max);
   }
 
-  let randomHouses = getRandomInt(3);
+  const randomHouses = getRandomInt(3);
 
   const cardContainer = document.createElement("div");
   cardContainer.className = "card-container";
