@@ -64,7 +64,7 @@ function afterLumos() {
   document.body.appendChild(containerImgHat);
 
   const imageHat = document.createElement("img");
-  imageHat.src = "/assets/images/CHOIXPEAU.png";
+  imageHat.src = "/assets/images/choicehat.png";
   imageHat.className = "image-hat";
   containerImgHat.appendChild(imageHat);
 
