@@ -147,12 +147,40 @@ h2 {
 
 
 .lookForDifferences {
-    justify-content: space-evenly;
-    margin-left: 50px;
-    margin: 30px;
-    width: 600px;
-    height: 450px;
-    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 0px;
+}
+
+.correctDifferences {
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.difference {
+    margin: 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.difference button {
+    padding: 5px;
+    color: var(--title-color);
+    background-color: #440505;
+    border: #440505;
+    margin-bottom: 10%;
+}
+
+.difference1 {
+    padding: 10px;
 }
 
 @media screen and (max-width: 767px) {
