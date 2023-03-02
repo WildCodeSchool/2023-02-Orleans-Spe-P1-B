@@ -19,8 +19,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('../assets/images/grifschool.jpg');
-    height: 100vh;
+    background-image: url('../assets/images/serpentardRoom.png');
+    height: 90vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -36,7 +36,7 @@ header {
 }
 
 .photo {
-    background-image: url('../assets/images/coat-of-arms.png');
+    background-image: url('../assets/images/serpentard.png');
     width: 16em;
     height: 18em;
     background-size: contain;
@@ -48,15 +48,16 @@ header {
 
 h1 {
     font-family: 'Irish Grover', cursive;
-    color: var(--title-color);
+    color: #0d3f22;
     font-size: var(--title-size);
     margin-bottom: 0.5rem;
     margin-top: 1.5rem;
+    text-shadow: 1px 2px 2px rgb(180, 180, 180);
 }
 
 h2 {
     font-family: 'Irish Grover', cursive;
-    color: var(--title-color);
+    color: #0d3f22;
     font-size: var(--font-size);
 }
 
@@ -87,7 +88,7 @@ h2 {
     margin-bottom: 6em;
     border: 1px solid;
     border-radius: 15px;
-    background-color: var(--dark);
+    background-color:#237446;
     opacity: 0.9;
 }
 
@@ -100,13 +101,13 @@ h2 {
     margin-top: 2rem;
     border: 1px solid;
     border-radius: 15px;
-    background-color: var(--dark);
+    background-color:#237446;
     opacity: 0.9;
 }
 
 .communRoom {
     width: 330px;
-    height: auto;
+    height: 340px;
     border-radius: 10px;
 }
 
