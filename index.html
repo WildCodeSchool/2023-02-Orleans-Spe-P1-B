@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Sorcerys</title>
+</head>
+
+<body>
+    <h1 class="welcome">Bienvenue sur Sorcerys
+        Pour une illumination, l'équilibre parfait doit être au cœur de votre écran..
+    </h1>
+    <div class="gamecontainer">
+        <a href="" class="buttonmasked" style="cursor:grab;">Alohomora</a>
+    </div>
+    <div class="map">
+        <svg height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+            <path style="fill:#FF6243;"
+                d="M256,0C154.739,0,72.348,82.386,72.348,183.652c0,67.027,16.956,92.392,148.945,289.772
+   l20.826,31.157C245.217,509.217,250.424,512,256,512s10.782-2.783,13.881-7.418l17.369-25.978
+   c135.054-202.011,152.402-227.967,152.402-294.951C439.652,82.386,357.261,0,256,0z M256,267.13
+   c-46.032,0-83.478-37.446-83.478-83.478s37.446-83.478,83.478-83.478s83.478,37.446,83.478,83.478S302.032,267.13,256,267.13z" />
+            <path style="fill:#FF3501;" d="M256,0v100.174c46.032,0,83.478,37.446,83.478,83.478S302.032,267.13,256,267.13V512
+   c5.576,0,10.782-2.783,13.881-7.418l17.369-25.978c135.054-202.011,152.402-227.967,152.402-294.951C439.652,82.386,357.261,0,256,0
+   z" />
+        </svg>
+        <h3>Forêt interdite</h3>
+    </div>
+    <div class="school">
+        <img id="school-img" src="./assets/images/teams.png" alt="School"
+            style="width:80px;height:80px;cursor:pointer;">
+        <img id="letterhogwart" class="slide-img" src="./assets/images/letter.png" alt="letterhogwart"
+            style="display:none;width:600px;height:700px;">
+    </div>
+    <canvas id="canvas3d" style="cursor:grab;"></canvas>
+    <script src="./assets/JS/script.js" type="module"></script>
+
+</body>
+
+</html>
