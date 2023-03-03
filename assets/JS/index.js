@@ -1,7 +1,7 @@
 const messagePass =
-    "Felicitation vous avez trouvé tous les differences!"
+    "Felicitation vous avez trouvé toutes les differences!"
 const messageNoPass =
-    "Veuillez entrer les différences correctes dans les photos."
+    "Vous n'avez pas trouvé le bon nombre de différences ! Réessayez !"
 
 const differenceInput = document.getElementById("difference");
 
