@@ -18,7 +18,7 @@ function myFunction() {
 function showElem() {
     const divDifference = document.getElementById("nextPage");
     const linkNextPageButton = document.createElement('a');
-    linkNextPageButton.href="/choiceHat/choice-hat.html";
+    linkNextPageButton.href = "../choiceHat/choice-hat.html";
     divDifference.appendChild(linkNextPageButton);
     const buttonNextPage = document.createElement('button');
     buttonNextPage.textContent = "Suivant";
