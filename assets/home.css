@@ -18,14 +18,14 @@ canvas {
 .welcome {
   position: absolute;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   z-index: 2;
   color: var(--light);
   top: 0%;
   left: 50%;
   white-space: pre-line;
   transform: translate(-50%, -50%);
-  padding-top: 180px;
+  padding-top: 10vw;
 }
 
 .buttonmasked {
@@ -111,7 +111,7 @@ canvas {
   }
 
   .welcome {
-    font-size: 5vw;
+    font-size: 4vw;
     padding-top: 180px;
   }
 }
