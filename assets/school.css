@@ -122,34 +122,63 @@ h2 {
     margin-top: 3.5em;
 }
 
-@media screen and (max-width: 767px) {
-    .card {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2rem;
+footer {
+    margin-top: 30px;
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+#school-img {
+    animation: hithere 8s ease infinite;
+}
+
+#school-img.stop-animation {
+    animation: none;
+    transition: none;
+}
+
+
+@keyframes hithere {
+    30% {
+        transform: scale(1.2);
     }
 
-    .card-reverse {
-        flex-direction: column;
-        align-items: center;
+    40%,
+    60% {
+        transform: rotate(-10deg) scale(1.2);
     }
 
-    img {
-        order: 1;
+    50% {
+        transform: rotate(10deg) scale(1.2);
     }
 
-    .communRoom {
-        width: 400px;
+    70% {
+        transform: rotate(0deg) scale(1.2);
     }
 
-    .bedroom {
-        width: 420px;
-    }
-
-    .description {
-        order: 2;
-        text-align: center;
-        margin-top: var(1em);
+    100% {
+        transform: scale(1);
     }
 }
 
+#letterhogwart {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+}
+
+@media (max-width: 480px) {
+
+    #school-img {
+        display: none;
+    }
+}
