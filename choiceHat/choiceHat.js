@@ -155,7 +155,7 @@ function houseCards() {
     {
       name: "Gryffondor",
       image: "/assets/images/coat-of-arms.png",
-      link: "../griffondor.html",
+      link: "../gryffondor.html",
     },
     {
       name: "Poufsouffle",
