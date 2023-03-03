@@ -94,7 +94,7 @@ function afterLumos() {
   firstNameForm.setAttribute("type", "text");
   firstNameForm.setAttribute("name", "firstName");
   firstNameForm.setAttribute("placeholder", "Harry");
-  firstNameForm.setAttribute("id", "first-name");
+  firstNameForm.setAttribute("id", "firstname");
   containerFormFirstName.appendChild(firstNameForm);
 
   const containerFormLastName = document.createElement("div");
@@ -109,7 +109,7 @@ function afterLumos() {
   lastNameForm.setAttribute("type", "text");
   lastNameForm.setAttribute("name", "lastName");
   lastNameForm.setAttribute("placeholder", "Potter");
-  lastNameForm.setAttribute("id", "last-name");
+  lastNameForm.setAttribute("id", "lastname");
   containerFormLastName.appendChild(lastNameForm);
 
   const containerParentQuestion = document.createElement("div");
