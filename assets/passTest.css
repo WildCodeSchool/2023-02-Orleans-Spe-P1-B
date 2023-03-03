@@ -23,18 +23,20 @@ header {
 
 h1 {
     font-family: 'Irish Grover', cursive;
-    color: yellowgreen;
+    color: var(--secondaryToTest);
     margin-bottom: 0.5rem;
     margin-top: 1.5rem;
-    font-size: 3rem;
+    font-size: var(--title-size);
 }
 
 h2 {
     font-family: 'Irish Grover', cursive;
-    color: yellowgreen;
+    color: var( --secondaryToTest);
     font-size: 1.5rem;
-    background-color: #440505;
+    background-color: var(--title-serdaigleTest);
     padding: 5px;
+    border-radius: 15%;
+    margin-top: 10px;
 }
 
 .lookForDifferences {
@@ -58,17 +60,19 @@ h2 {
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+    border-radius: 15%;
 }
 
 .difference button {
     padding: 5px;
-    color: yellowgreen;
-    background-color: #440505;
-    border: #440505;
+    color: var(--secondaryToTest);
+    background-color: var(--title-serdaigleTest);
+    border: var(--dark);
     margin-bottom: 10%;
     font-size: 1rem;
+    border-radius: 15%;
 }
 
 .difference1 {
-    padding: 10px;
+    padding: 15px;
 }
