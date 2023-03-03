@@ -15,9 +15,6 @@ function myFunction() {
     }
 };
 
-
-// const nextPageButton = document.getElementById("nextPage");
-
 function showElem() {
     const divDifference = document.getElementById("nextPage");
     const linkNextPageButton = document.createElement('a');
@@ -27,7 +24,3 @@ function showElem() {
     buttonNextPage.textContent = "Suivant";
     linkNextPageButton.appendChild(buttonNextPage);
 }
-
-
-// if (differenceInput.value === 8) {
-// document.getElementById("nextPage").style.visibility = "visible";
