@@ -31,7 +31,7 @@ h2 {
     background-color: var(--background-serdaigle);
 }
 
-.communRoom {
+.commun-room {
     width: 330px;
     height: 363px;
 }
@@ -57,7 +57,7 @@ h2 {
         order: 1;
     }
 
-    .communRoom {
+    .commun-room {
         width: 400px;
     }
 
@@ -69,5 +69,7 @@ h2 {
         order: 2;
         text-align: center;
         margin-top: var(1em);
+        padding: 50px;
+        font-size: 1.2em;
     }
 }

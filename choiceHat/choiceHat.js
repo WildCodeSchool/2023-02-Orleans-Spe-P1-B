@@ -17,7 +17,7 @@ lumosForm.appendChild(lumosFormLabel);
 const lumosFormInput = document.createElement("input");
 lumosFormInput.setAttribute("type", "text");
 lumosFormInput.setAttribute("name", "lumosInput");
-lumosFormInput.setAttribute("id", "lumosInput");
+lumosFormInput.setAttribute("id", "lumos-input");
 lumosFormInput.className = "lumos-form-input";
 lumosForm.appendChild(lumosFormInput);
 
@@ -47,8 +47,8 @@ lumosForm.onsubmit = function (event) {
 };
 
 function afterLumos() {
-  document.body.classList.remove("bodyClass");
-  document.body.classList.add("bodyClassAfter");
+  document.body.classList.remove("body-class");
+  document.body.classList.add("body-class-after");
 
   const containerTitle = document.createElement("div");
   containerTitle.className = "container-title";
@@ -94,7 +94,7 @@ function afterLumos() {
   firstNameForm.setAttribute("type", "text");
   firstNameForm.setAttribute("name", "firstName");
   firstNameForm.setAttribute("placeholder", "Harry");
-  firstNameForm.setAttribute("id", "firstName");
+  firstNameForm.setAttribute("id", "first-name");
   containerFormFirstName.appendChild(firstNameForm);
 
   const containerFormLastName = document.createElement("div");
@@ -109,7 +109,7 @@ function afterLumos() {
   lastNameForm.setAttribute("type", "text");
   lastNameForm.setAttribute("name", "lastName");
   lastNameForm.setAttribute("placeholder", "Potter");
-  lastNameForm.setAttribute("id", "lastName");
+  lastNameForm.setAttribute("id", "last-name");
   containerFormLastName.appendChild(lastNameForm);
 
   const containerParentQuestion = document.createElement("div");
