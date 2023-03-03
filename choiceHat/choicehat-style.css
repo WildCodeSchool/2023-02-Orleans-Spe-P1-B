@@ -7,6 +7,7 @@ body {
   background-size: cover;
   height: 100dvh;
 }
+
 .bodyClassAfter {
   background: url("/assets/images/bgtestpngsimple.png");
   background-size: contain;
@@ -20,7 +21,8 @@ body {
 }
 
 .container-title {
-  font-family:'Irish Grover', cursive; ;
+  font-family: 'Irish Grover', cursive;
+  ;
   font-size: clamp();
   display: flex;
   justify-content: center;
@@ -73,6 +75,7 @@ body {
 #firstName {
   margin-block-start: 5px;
 }
+
 #lastName {
   margin-block-start: 5px;
 }
