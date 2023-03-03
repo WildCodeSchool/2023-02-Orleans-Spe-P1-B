@@ -170,7 +170,7 @@ function houseCards() {
     {
       name: "Serpentard",
       image: "/assets/images/serpentard.png",
-      link: "../serpentar.html",
+      link: "../serpentard.html",
     },
   ];
 console.log(houses[3].link);

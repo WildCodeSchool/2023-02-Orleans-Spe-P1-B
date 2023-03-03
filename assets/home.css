@@ -2,6 +2,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: black;
+  font-family: 'Irish Grover', cursive;
 }
 
 html,
@@ -19,7 +20,7 @@ canvas {
   text-align: center;
   font-size: medium;
   z-index: 2;
-  color: white;
+  color: var(--light);
   top: 0%;
   left: 50%;
   white-space: pre-line;
@@ -51,7 +52,7 @@ canvas {
   z-index: 2;
   bottom: 0;
   right: 0;
-  color: white;
+  color: var(--light);
 }
 
 .school {
@@ -61,7 +62,7 @@ canvas {
   z-index: 2;
   bottom: 0;
   left: 0;
-  color: white;
+  color: var(--light);
   padding-bottom: 5px;
   padding-left: 5px;
 }
