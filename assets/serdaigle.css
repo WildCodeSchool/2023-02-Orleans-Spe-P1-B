@@ -2,7 +2,6 @@ body {
     background-image: url('../assets/images/backgroundserdaigle.jpg');
 }
 
-
 .photo {
     background-image: url('../assets/images/Serdaigle.png');
 }
@@ -11,7 +10,6 @@ h1 {
     color: var(--title-serdaigle);
     text-shadow: 0px 0px 4px #1D181C;
     font-size: var(--title-size);
-
 }
 
 h2 {
