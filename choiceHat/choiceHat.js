@@ -173,7 +173,7 @@ function houseCards() {
       link: "../serpentard.html",
     },
   ];
-console.log(houses[3].link);
+
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
