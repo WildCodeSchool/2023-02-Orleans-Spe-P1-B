@@ -2,13 +2,13 @@ body {
   font-family: 'Irish Grover', cursive;
 }
 
-.bodyClass {
+.body-class {
   background-color: black;
   background-size: cover;
   height: 100dvh;
 }
 
-.bodyClassAfter {
+.body-class-after {
   background: url("/assets/images/bgtestpngsimple.png");
   background-size: contain;
   height: 100dvh;
@@ -69,11 +69,11 @@ body {
   width: 10rem;
 }
 
-#firstName {
+#firstname {
   margin-block-start: 5px;
 }
 
-#lastName {
+#lastname {
   margin-block-start: 5px;
 }
 
@@ -138,7 +138,7 @@ body {
   font-size: clamp(1rem, 5vw, 4rem);
 }
 
-#lumosInput {
+#lumos-input {
   text-align: center;
   display: flex;
   color: grey;
