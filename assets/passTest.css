@@ -39,14 +39,14 @@ h2 {
     margin-top: 10px;
 }
 
-.lookForDifferences {
+.look-for-differences {
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
 }
 
-.correctDifferences {
+.correct-differences {
     justify-content: center;
     flex-direction: row;
     justify-content: space-around;
