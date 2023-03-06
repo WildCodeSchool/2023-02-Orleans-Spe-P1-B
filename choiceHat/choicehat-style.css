@@ -217,6 +217,22 @@ h2 {
   height: 15rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .lumos-form-input {
+    position: absolute;
+    top: 143px;
+    right: 327px;
+  }
+
+  .wand-lumos {
+    position: absolute;
+    right: 500px;
+
+    height: 650px;
+    transform: rotate(15deg);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .container-name {
     flex-direction: column;
