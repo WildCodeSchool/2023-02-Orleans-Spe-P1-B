@@ -74,5 +74,7 @@ h2 {
 }
 
 .difference1 {
+    display: flex;
+    justify-content: center;
     padding: 15px;
 }
