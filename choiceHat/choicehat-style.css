@@ -9,7 +9,7 @@ body {
 }
 
 .body-class-after {
-  background: url("/assets/images/bgtestpngsimple.png");
+  background: url("../assets/images/bgtestpngsimple.png");
   background-size: contain;
   height: 100dvh;
   backdrop-filter: blur(20px);
