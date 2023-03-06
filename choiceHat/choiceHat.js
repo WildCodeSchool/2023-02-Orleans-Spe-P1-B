@@ -28,7 +28,7 @@ btnLumos.className = "btn-lumos";
 lumosForm.appendChild(btnLumos);
 
 const wandLumos = document.createElement("img");
-wandLumos.src = "/assets/images/wand.png";
+wandLumos.src = "../assets/images/wand.png";
 wandLumos.className = "wand-lumos";
 document.body.appendChild(wandLumos);
 
@@ -64,7 +64,7 @@ function afterLumos() {
   document.body.appendChild(containerImgHat);
 
   const imageHat = document.createElement("img");
-  imageHat.src = "/assets/images/choicehat.png";
+  imageHat.src = "../assets/images/choicehat.png";
   imageHat.className = "image-hat";
   containerImgHat.appendChild(imageHat);
 
@@ -138,7 +138,7 @@ function afterLumos() {
   containerQuestion.appendChild(btnSend);
 
   const buttonImage = document.createElement("img");
-  buttonImage.src = "/assets/images/owl.png";
+  buttonImage.src = "../assets/images/owl.png";
   buttonImage.className = "button-owl";
   btnSend.appendChild(buttonImage);
 
@@ -154,22 +154,22 @@ function houseCards() {
   const houses = [
     {
       name: "Gryffondor",
-      image: "/assets/images/coat-of-arms.png",
+      image: "../assets/images/coat-of-arms.png",
       link: "../gryffondor.html",
     },
     {
       name: "Poufsouffle",
-      image: "/assets/images/Poufsouffle.png",
+      image: "../assets/images/Poufsouffle.png",
       link: "../poufsouffle.html",
     },
     {
       name: "Serdaigle",
-      image: "/assets/images/Serdaigle.png",
+      image: "../assets/images/Serdaigle.png",
       link: "../serdaigle.html",
     },
     {
       name: "Serpentard",
-      image: "/assets/images/serpentard.png",
+      image: "../assets/images/serpentard.png",
       link: "../serpentard.html",
     },
   ];
@@ -178,7 +178,7 @@ function houseCards() {
     return Math.floor(Math.random() * max);
   }
 
-  const randomHouses = getRandomInt(3);
+  const randomHouses = getRandomInt(3.99999);
 
   const cardContainer = document.createElement("div");
   cardContainer.className = "card-container";
@@ -209,7 +209,7 @@ function houseCards() {
   cardLink.appendChild(cardButton);
 
   const imageButtonLink = document.createElement("img");
-  imageButtonLink.src = "/assets/images/houseslogobutton.png";
+  imageButtonLink.src = "../assets/images/houseslogobutton.png";
   imageButtonLink.className = "button-howgarts";
   cardButton.appendChild(imageButtonLink);
 }
