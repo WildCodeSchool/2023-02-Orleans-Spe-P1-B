@@ -196,7 +196,6 @@ body {
   align-items: center;
   padding-block: 1.5rem;
   margin-block-start: 1.5rem;
-
   height: 20rem;
   width: 25rem;
   margin-inline: auto;
@@ -215,6 +214,22 @@ h2 {
 
 .image-hat {
   height: 15rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .lumos-form-input {
+    position: absolute;
+    top: 143px;
+    right: 327px;
+  }
+
+  .wand-lumos {
+    position: absolute;
+    right: 500px;
+
+    height: 650px;
+    transform: rotate(15deg);
+  }
 }
 
 @media screen and (max-width: 480px) {
